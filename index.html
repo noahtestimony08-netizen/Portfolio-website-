@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NT Digital Tech | Web Developer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Inter&display=swap');
+    *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+    body{background:linear-gradient(135deg,#1a0033 0%,#0a0a0f 100%);color:#e0e0e0;font-family:'Inter',sans-serif;}
+    nav{background:#111118;padding:20px;display:flex;justify-content:space-between;position:fixed;width:100%;top:0;border-bottom:1px solid #2a2a3a;}
+    nav a{color:#a855f7;text-decoration:none;margin:0 10px;font-weight:700;font-family:'Poppins';}
+    .hero{padding:140px 20px 80px;text-align:center;min-height:100vh;}
+    .hero h1{font-size:40px;background:linear-gradient(90deg,#a855f7,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-family:'Poppins';}
+    .btn{display:inline-block;background:linear-gradient(90deg,#a855f7,#ec4899);color:white;padding:16px 40px;border-radius:50px;text-decoration:none;font-weight:700;transition:0.3s;box-shadow:0 0 20px rgba(168,85,247,0.4);}
+    .btn:hover{transform:translateY(-5px);box-shadow:0 0 40px rgba(168,85,247,0.8);}
+    #projects,#about,#contact{padding:80px 20px;text-align:center;}
+    .project{background:#1a1a24;border:1px solid #2a2a3a;padding:30px;border-radius:20px;max-width:500px;margin:20px auto;transition:0.3s;}
+    .project:hover{transform:translateY(-10px);border-color:#a855f7;}
+    @media(max-width:768px){.hero h1{font-size:35px;}}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">NT Digital</a>
+    <div><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+  </nav>
+
+  <section class="hero">
+    <h1>NT DIGITAL TECH</h1>
+    <p>I build websites for businesses in Nigeria</p>
+    <a href="#projects" class="btn">See My Work💯</a>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>💈 Barber Website</h3>
+      <p>Website I built for a barber salon✂️ in Abuja</p>
+      <a href="https://noahtestimony08-netizen.github.io/King-Cuts-Barber/" target="_blank" class="btn">View Project✅💯</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Let's Work Together</h2>
+    <a href="https://wa.me/23480XXXXXXXX" target="_blank" class="btn">Message Me on WhatsApp</a>
+  </section>
+
+  <footer style="text-align:center;padding:20px;">© 2026 NT Digital Tech. Built with ❤️ in Abuja</footer>
+</body>
+</html>
