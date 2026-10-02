@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Inter:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0a0a0f;
+  background-image: linear-gradient(135deg, #1a0033 0%, #0a0a0f 100%);
+  color: #e0e0e0;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+/* 1. HERO SECTION WITH EFFECT */
+.hero {
+  padding: 120px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 45px; /* Fixed for mobile */
+  background: linear-gradient(90deg, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #a0a0b0;
+  margin-bottom: 30px;
+}
+
+/* 2. BUTTON WITH HOVER EFFECT */
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #a855f7, #ec4899);
+  color: white;
+  padding: 16px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s ease; /* THIS MAKES EFFECT WORK */
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+.btn:hover {
+  transform: translateY(-5px) scale(1.05); /* LIFT + GROW EFFECT */
+  box-shadow: 0 0 40px rgba(168, 85, 247, 0.8);
+}
+
+/* 3. PROJECT CARD WITH HOVER */
+#projects {
+  background: #111118;
+  padding: 80px 20px;
+}
+
+.project {
+  background: #1a1a24;
+  border: 1px solid #2a2a3a;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  transition: 0.3s ease; /* EFFECT FOR CARD */
+}
+.project:hover {
+  transform: translateY(-10px);
+  border-color: #a855f7;
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.3);
+}
+
+/* 4. CONTACT + ABOUT */
+#about, #contact {
+  padding: 80px 20px;
+}
+
+/* 5. MOBILE RESPONSIVE - THIS IS THE KEY */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 35px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+  .btn {
+    padding: 14px 30px;
+  }
+}
