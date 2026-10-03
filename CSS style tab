@@ -98,3 +98,7 @@ h1, h2, h3 {
     padding: 14px 30px;
   }
 }
+body {
+  background: linear-gradient(135deg, #1a0033 0%, #0a0a0f 100%);
+  color: white;
+}
